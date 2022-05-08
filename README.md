@@ -1,2 +1,7 @@
-# hauskatze
-Sourcecode von der Hauskatzen Webseite (für die IT-Stunde in der Schule)
+
+  ```javascript
+  function hauskatze() {
+      let url = 'https://immanuelm.de/katze';
+      return url;
+  }
+  ```

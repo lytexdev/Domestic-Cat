@@ -1,0 +1,159 @@
+
+
+body {
+    margin: 0;
+    background-color: rgb(73, 73, 73);
+    text-align: center;
+}
+
+#logo { 
+    width: 100px;
+    text-align: center;
+    border: 2px solid rgb(250, 90, 68);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #575757;
+    border-radius: 50px;
+}
+
+#logo:hover {
+    transition: all .2s ease-in;
+    border: 2px solid rgb(160, 160, 160);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#top {
+    font-size: 38px;
+    text-align: center; 
+    text-decoration: none;
+    background-image: url(https://immanuelm.de/katze/stuff/images/background.png);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: rgb(250, 82, 60);
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+#top p:hover {
+    transition: all .2s ease-in;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+#navigator a {
+    color: rgb(196, 196, 196);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: 2px solid rgb(250, 76, 52);
+    border-style: outset;
+    background-color: #494949;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 7px;
+}
+
+#navigator b {
+    color: rgb(143, 143, 143);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navigator a:hover {
+    transition: all .1s ease-in;
+    color: rgb(230, 230, 230);
+    transition: all .1s ease-in;
+    color: rgb(255, 255, 255);
+    transition: all .2s ease-in;
+    border: 2px solid rgb(105, 105, 105);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#current_side {
+    text-decoration: underline;
+}
+
+#middle {
+    text-align: left;
+    padding-bottom: 200px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#britisch-kurzhaar {
+    text-align: right;
+    padding-right: 300px;
+    display: block;
+}
+
+#britisch-kurzhaar img {
+    cursor: url(https://immanuelm.de/katze/stuff/images/cursor-raw.png), auto;
+    border: 3px solid rgb(255, 90, 68);
+    box-shadow: 0 0 40px rgb(243, 93, 73);
+    padding: 10px;
+}
+
+#text-box {
+    text-align: left;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 55px;
+    cursor: pointer;
+    background: linear-gradient(#474747, #636363);
+    border: 3px solid rgb(216, 72, 53);
+    box-shadow: 0 0 10px rgb(221, 73, 54);
+}
+
+#text-box h3 {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+#text-box h3:hover {
+    transition: all .2s ease-in;
+    text-shadow: 0 0 3px rgb(255, 184, 184);
+}
+
+#text-box p {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    transition: all .2s ease-in;
+}
+
+#text-box p:hover {
+    transition: all .2s ease-in;
+    text-shadow: 0 0 3px rgb(248, 179, 179);
+}
+
+@media screen and (max-width: 800px) {
+    #logo {
+        width: 80px;
+    }
+    #top p {
+        font-size: 20px;
+    }
+    #navigator a {
+        font-size: 16px;
+    }
+    #middle {
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    #middle h3 {
+        font-size: 16px;
+    }
+    #middle p {
+        font-size: 14px;
+    }
+    #middle img {
+        height: 140px;
+        margin-left: 100px;
+    }
+    #text-box {
+        margin-right: -200px;
+        margin-left: 100px;
+        padding: 10px;
+    }
+}

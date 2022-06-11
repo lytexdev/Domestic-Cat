@@ -1,7 +1,6 @@
 
   ```javascript
   function hauskatze() {
-      let url = 'https://immanuelm.de/katze';
-      return url;
+      const url = 'https://immanuelm.de/katze';
   }
   ```

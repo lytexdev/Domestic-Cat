@@ -8,4 +8,4 @@ zu den Informationen, die man auf der Webseite findet, ein Quiz.
 
 Die Webseite findest du [HIER](https://immanuelm.de/hauskatze)
 
-https://raw.githubusercontent.com/ximmanuel/hauskatze/main/stuff/images/logo.png
+![logo](https://user-images.githubusercontent.com/58741507/182017994-a8befd42-46ff-4c4b-943c-7e9d5c201e00.png)

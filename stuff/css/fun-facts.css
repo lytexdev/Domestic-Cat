@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background-color: rgb(73, 73, 73);
+    text-align: center;
+}
+
+#logo { 
+    width: 100px;
+    text-align: center;
+    border: 2px solid rgb(224, 172, 231);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #575757;
+    border-radius: 50px;
+}
+
+#logo:hover {
+    transition: all .2s ease-in;
+    border: 2px solid rgb(160, 160, 160);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#top {
+    font-size: 38px;
+    text-align: center; 
+    text-decoration: none;
+    background-image: url(https://immanuelm.de/katze/stuff/images/background.png);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-bottom: 40px;
+    padding-top: 15px;
+    color: rgb(253, 163, 238);
+}
+
+#top p:hover {
+    transition: all .2s ease-in;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+#navigator a {
+    color: rgb(196, 196, 196);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: 2px solid rgb(224, 172, 231);
+    border-style: outset;
+    background-color: #494949;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 7px;
+}
+
+#navigator b {
+    color: rgb(143, 143, 143);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navigator a:hover {
+    transition: all .1s ease-in;
+    color: rgb(230, 230, 230);
+    transition: all .1s ease-in;
+    color: rgb(255, 255, 255);
+    transition: all .2s ease-in;
+    border: 2px solid rgb(105, 105, 105);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#current_side {
+    text-decoration: underline;
+}
+
+#middle {
+    text-align: left;
+    padding-left: 100px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#middle h3 {
+    color: rgb(215, 150, 228);
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#middle h3:hover {
+    transition: all .2s ease-in;
+    text-shadow: 0 0 3px rgb(181, 125, 192);
+}
+
+#middle h4 {
+    color: rgb(246, 202, 250);
+    font-size: 18px;
+}
+
+#middle h4:hover {
+    transition: all .2s ease-in;
+    text-shadow: 0 0 3px rgba(206, 206, 206, 0.5);
+}
+
+#middle img {
+    padding-left: 10px;
+    height: 120px;
+    transform: rotate(-15deg);
+}
+
+@media screen and (max-width: 800px) {
+    #logo {
+        width: 80px;
+    }
+    #top p {
+        font-size: 20px;
+    }
+    #navigator a {
+        font-size: 16px;
+    }
+    #middle {
+        text-align: center;
+        padding-left: 0px;
+    }
+    #middle img {
+        width: 80px;
+        height: 80px;
+    }
+    #middle h3 {
+        text-align: left;
+        padding-left: 55px;
+        font-size: 16px;
+    }
+    #middle h4 {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Informationen zu der Britisch Kurzhaar Katze">
+	<link rel="icon" type="image/png" sizes="600x600" href="stuff/images/logo.png">
+	<meta name="theme-color" content="#ff5959">
+
+	<title>Die Hauskatze | Britisch Kurzhaar</title>
+
+	<link rel="stylesheet" href="stuff/css/main.css">
+	<link rel="stylesheet" href="stuff/css/index.css">
+	<link rel="stylesheet" href="stuff/css/britisch-kurzhaar.css">
+	<link rel="stylesheet" href="stuff/css/quiz.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+	<button onclick="goToTop()" id="go-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</button> 
+	
+	<section id ="top">
+        <img id="logo" onclick="handleLogoClick()" src="stuff/images/logo.png" alt="Logo" loading="lazy">
+
+         <p>Britisch Kurzhaar</p>
+
+		<div id="navigator" class="topnav">
+			<a href="index.html">Start</a>
+			<b>•</b>
+			<a href="steckbrief.html">Steckbrief</a>
+			<b>•</b>
+			<a href="fun-facts.html">Fun Facts</a>
+			<b>•</b>
+			<a href="bombay-katze.html">Bombay-Katze</a>
+			<b>•</b>
+			<a href="bengalkatze.html">Bengalkatze</a>
+			<b>•</b>
+			<span id="current_side" onclick="currentSide()"><a>Britisch Kurzhaar</a></span>
+			<b>•</b>
+			<a class="quiz_start_btn">Quiz</a>
+
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="openNavigator()">&#9776;</a>
+			<br>
+			<br>
+			<hr>
+		</div>
+	</section>
+	<section id="middle">
+        <div id="britisch-kurzhaar">
+            <br>
+            <br>
+            <br>
+			<a href="https://youtu.be/x7y5juRyg7w" target="_blank">
+				<img title="Britisch-kurzhaar Katze" src="stuff/images/britisch-kurhaarz.jpg" alt="Britisch-kurzhaar Katze" height="275px" loading="lazy">
+			</a>
+			<br>
+            <br>
+            <br>
+            <br>
+            <br>
+			<div id="text-box">
+				<br>
+				<h3>Allgemein</h3>
+				<p>• wiegt zwischen 6-8 kg</p>
+				<p>• mittelgroßer Körper</p>
+				<p>• wird bis zu 15 Jahre alt</p>
+				<br>
+				<h3>Aussehen</h3>
+				<p>• große Pfoten</p>
+				<p>• viele Fellfarben</p>
+				<p>• kurze und stämmige Beine</p>
+				<br>
+				<h3>Charakter</h3>
+				<p>• unkompliziert</p>
+				<p>• kinderlieb</p>
+				<p>• gesprächig</p>
+				<br>
+				<h3>Herkunft</h3>
+				<p>• England</p>
+				<p>• in vielen Ländern verbreitet</p>
+				<br>
+			</div>
+			<br>
+			<br>
+        </div>
+		
+		<div class="info_box">
+			<div class="info-title"><span>Regeln und Informationen zu dem Quiz</span></div>
+			<div class="info-list">
+				<div class="info">1. Du hast pro Antwort <span>10 Sekunden</span> Zeit.</div>
+				<br>
+				<div class="info">2. Deine Antwort kann nicht mehr zurückgerufen werden.</div>
+				<br>
+				<div class="info">3. Du kannst nur eine Antwort auswählen.</div>
+				<br>
+				<div class="info">4. Du solltest dir die Informationen der Website ganz genau angeschaut haben.</div>
+				<br>
+				<div class="info">5. Nach dem Quiz siehst du, wie viele Punkte du hast.</div>
+				<br>
+			</div>
+			<div class="buttons">
+				<button class="quit">Abbrechen</button>
+				<button class="restart">Weiter</button>
+			</div>
+		</div>
+	
+		<div class="quiz_box">
+			<header>
+				<div class="title">Hauskatzen | Quiz</div>
+				<div class="timer">
+					<div class="time_left_txt">Zeit:</div>
+					<div class="timer_sec">10</div>
+				</div>
+				<div class="time_line"></div>
+			</header>
+			<section>
+				<div class="que_text">
+				</div>
+				<div class="option_list">
+				</div>
+			</section>
+	
+			<footer>
+				<div class="total_que">
+				</div>
+				<button class="next_btn">Weiter</button>
+			</footer>
+		</div>
+	
+		<div class="result_box">
+			<div class="icon">
+				<i class="fas fa-cat"></i>
+			</div>
+				<div class="complete_text">Du hast das Quiz beendet!</div>
+				<div class="score_text">
+			</div>
+			<div class="buttons">
+				<button class="restart">Erneut spielen</button>
+				<button class="quit">Schließen</button>
+			</div>
+		</div>
+	</section>
+	<section id="footer">
+        <p title="Made by Immanuel" id="author_text" onclick="onAuthorClick()"> » Made by Immanuel « </p>
+
+        <a title="Kontakt-Email" href="mailto:contact@immanuelm.de">Kontakt</a>
+		<i class="fas fa-address-book feature"></i>
+        <b>•</b>
+        <a title="Quellenangaben" href="quellen.html" target="_blank">Quellen</a>
+		<i class="fas fa-sign feature"></i>
+        <b>•</b>
+        <a title="Sourcecode der Website" href="https://github.com/ximmanuel/hauskatze" target="_blank">Github</a>
+		<i class="fas fa-folder-open feature"></i>
+        <br>
+    </section>
+</body>
+<script src="stuff/scripts/main.js"></script>
+<script src="stuff/scripts/questions.js"></script>
+<script src="stuff/scripts/quiz.js"></script>
+</html>

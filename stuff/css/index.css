@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    background-color: #494949;
+    text-align: center;
+}
+
+#logo { 
+    width: 100px;
+    text-align: center;
+    border: 2px solid rgba(236, 229, 229, 0.829);
+    box-shadow: 0 0 10px rgba(59, 57, 57, 0.5);
+    background-color: #575757;
+    border-radius: 50px;
+}
+
+#logo:hover {
+    transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    border: 2px solid rgb(160, 160, 160);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#top {
+    font-size: 38px; 
+    text-align: center; 
+    text-decoration: none;
+    background-image: url(https://immanuelm.de/katze/stuff/images/background.png);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-bottom: 40px;
+    padding-top: 15px;
+    color: rgb(250, 250, 250);
+}
+
+#top p:hover {
+    transition: all .2s ease-in;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+#navigator a {
+    color: rgb(196, 196, 196);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: 2px solid rgb(226, 226, 226);
+    border-style: outset;
+    background-color: #494949;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 7px;
+}
+
+#navigator b {
+    color: rgb(143, 143, 143);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navigator a:hover {
+    transition: all .1s ease-in;
+    color: rgb(230, 230, 230);
+    transition: all .1s ease-in;
+    color: rgb(255, 255, 255);
+    transition: all .2s ease-in;
+    border: 2px solid rgb(105, 105, 105);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#current_side {
+    text-decoration: underline;
+}
+
+#middle {
+    font-size: 19px;
+    color: rgb(204, 204, 204);
+    text-shadow: 0 0 5px rgba(194, 219, 255, 0.5);
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+#middle a {
+    font-size: 19px;
+    color: rgb(204, 204, 204);
+    text-shadow: 0 0 5px rgba(194, 219, 255, 0.5);
+    text-decoration: underline;
+    text-align: center;
+}
+
+#note a:hover {
+    transition: all .2s ease-in;
+    color: rgb(228, 228, 228);
+    text-shadow: 0 0 7px rgba(204, 222, 247, 0.5);
+}
+
+#cat_image {
+    width: 600px;
+    text-align: left;
+    border: 3px solid rgba(255, 255, 255, 0.829);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+    background-color: #5e5e5e;
+    border-style: outset;
+    padding: 12px;
+}
+
+#cat_image:hover {
+    transition: all .2s ease-in;
+    cursor: url(https://immanuelm.de/katze/stuff/images/cursor-raw.png), auto;
+    transform: scale(1.05,1.05);
+    text-align: left;
+}
+
+#random_cat_btn {
+    background-image: linear-gradient(90deg, 
+        rgb(138, 138, 138) 0%, rgb(122, 121, 121) 56%, 
+        rgb(107, 106, 105) 100%);
+    animation: move 2s infinite;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+  
+@keyframes move {
+    50% {
+      background-image: linear-gradient(262deg, 
+        rgb(139, 139, 139) 0%, rgb(102, 102, 102) 56%, 
+        rgb(100, 100, 100) 100%);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #logo {
+        width: 80px;
+    }
+    #top p {
+        font-size: 20px;
+    }
+    #navigator a {
+        font-size: 16px;
+    }
+    #middle {
+        text-align: left;
+        font-size: 15px;
+    }
+    #note a {
+        font-size: 15px;
+    }
+	#cat_image {
+        width: 200px;
+        padding: 3px;
+    }
+	#random_cat_button {
+        font-size: 13px;
+    }
+}

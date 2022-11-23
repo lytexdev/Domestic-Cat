@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Fun-facts zu Hauskatzen">
+	<link rel="icon" type="image/png" sizes="600x600" href="stuff/images/logo.png">
+	<meta name="theme-color" content="#fc59ff">
+
+	<title>Die Hauskatze | Fun-Facts</title>
+
+	<link rel="stylesheet" href="stuff/css/main.css">
+	<link rel="stylesheet" href="stuff/css/index.css">
+	<link rel="stylesheet" href="stuff/css/fun-facts.css">
+	<link rel="stylesheet" href="stuff/css/quiz.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+	<button onclick="goToTop()" id="go-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</button> 
+
+	<section id ="top">
+		<img id="logo" onclick="handleLogoClick()" src="stuff/images/logo.png" alt="Logo" loading="lazy">
+
+		<p>Fun-Facts</p>
+
+		<div id="navigator" class="topnav">
+			<a href="index.html">Start</a>
+			<b>•</b>
+			<a href="steckbrief.html">Steckbrief</a>
+			<b>•</b>
+			<span id="current_side" onclick="currentSide()"><a>Fun Facts</a></span>
+			<b>•</b>
+			<a href="bombay-katze.html">Bombay-Katze</a>
+			<b>•</b>
+			<a href="bengalkatze.html">Bengalkatze</a>
+			<b>•</b>
+			<a href="britisch-kurzhaar.html">Britisch Kurzhaar</a>
+			<b>•</b>
+			<a class="quiz_start_btn">Quiz</a>
+
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="openNavigator()">&#9776;</a>
+			<br>
+			<br>
+			<hr>
+		</div>
+	</section>
+	<section id="middle">
+		<br>
+		<br>
+		<br>
+
+        <img title="Fun Facts" src="stuff/images/fun_fact.png" alt="Fun Fact Icon" loading="lazy">
+
+		<h3>1.</h3>
+        <h4>-> die älteste Katze wurde 37 Jahre alt.</h4>
+		<br>
+		<h3>2.</h3>
+		<h4>-> eine fitte Katze kann ungefähr die fünffache Höhe ihrer eigenen Größe springen.</h4>
+		<br>
+		<h3>3.</h3>
+		<h4>-> Katzen schlafen bis zu 16 Stunden am Tag, also zwei Drittel ihres Lebens.</h4>
+		<br>
+		<h3>4.</h3>
+		<h4>-> Katzennasen können bis zu 15-mal besser riechen als Menschennasen.</h4>
+		<br>
+		<h3>5.</h3>
+		<h4>-> durchschnittlich schnurrt eine Katze in ihrem Leben 10.950 Stunden.</h4>
+		<br>
+		<h3>6.</h3>
+		<h4>-> die ältesten Vorfahren der Katze lebten bereits vor etwa 50 Millionen Jahren.</h4>
+		<br>
+		<h3>7.</h3>
+		<h4>-> Haarballen, die Katzen (und andere Tierarten) ausspucken, nennt man „Bezoar“.</h4>
+		<br>
+		<h3>8.</h3>
+		<h4>-> Aspirin, was uns gegen Kopfschmerzen hilft, kann für die Katze tödlich sein.</h4>
+		<br>
+		<h3>9.</h3>
+		<h4>-> Katzen sind laktoseintolerant. Wenn sie Kuhmilch trinken, können sie wie wir Menschen Durchfall und Bauchschmerzen kriegen.</h4>
+        <br>
+        <h3>10.</h3>
+		<h4>-> während Menschen nur 34 Rückenwirbel haben, haben Katzen 53, daher ist der Katzenrücken weitaus flexibler.</h4>
+        <br>
+        <h3>11.</h3>
+		<h4>-> ab dem zehnten Lebensjahr zählt eine Katze zu den Senioren.</h4>
+        <br>
+        <h3>12.</h3>
+		<h4>-> schädlich für Katzen sind unter anderem Essig, Zwiebeln und Trauben.</h4>
+        <br>
+        <h3>13.</h3>
+		<h4>-> zum Stichwort „Katze“ findet Google mehr als 30 Millionen Einträge.</h4>
+        <br>
+        <h3>14.</h3>
+		<h4>-> Katzenurin kann man mit UV-Licht zum Leuchten bringen.</h4>
+        <br>
+        <h3>15.</h3>
+		<h4>-> in kompletter Dunkelheit sind selbst Katzenaugen nicht besonders effektiv, die Haustiere sehen am besten, wenn es dämmrig ist.</h4>
+
+		<div class="info_box">
+			<div class="info-title"><span>Regeln und Informationen zu dem Quiz</span></div>
+			<div class="info-list">
+				<div class="info">1. Du hast pro Antwort <span>10 Sekunden</span> Zeit.</div>
+				<br>
+				<div class="info">2. Deine Antwort kann nicht mehr zurückgerufen werden.</div>
+				<br>
+				<div class="info">3. Du kannst nur eine Antwort auswählen.</div>
+				<br>
+				<div class="info">4. Du solltest dir die Informationen der Website ganz genau angeschaut haben.</div>
+				<br>
+				<div class="info">5. Nach dem Quiz siehst du, wie viele Punkte du hast.</div>
+				<br>
+			</div>
+			<div class="buttons">
+				<button class="quit">Abbrechen</button>
+				<button class="restart">Weiter</button>
+			</div>
+		</div>
+	
+		<div class="quiz_box">
+			<header>
+				<div class="title">Hauskatzen | Quiz</div>
+				<div class="timer">
+					<div class="time_left_txt">Zeit:</div>
+					<div class="timer_sec">10</div>
+				</div>
+				<div class="time_line"></div>
+			</header>
+			<section>
+				<div class="que_text">
+				</div>
+				<div class="option_list">
+				</div>
+			</section>
+	
+			<footer>
+				<div class="total_que">
+				</div>
+				<button class="next_btn">Weiter</button>
+			</footer>
+		</div>
+	
+		<div class="result_box">
+			<div class="icon">
+				<i class="fas fa-cat"></i>
+			</div>
+				<div class="complete_text">Du hast das Quiz beendet!</div>
+				<div class="score_text">
+			</div>
+			<div class="buttons">
+				<button class="restart">Erneut spielen</button>
+				<button class="quit">Schließen</button>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+	</section>
+	<section id="footer">
+        <p title="Made by Immanuel" id="author_text" onclick="onAuthorClick()"> » Made by Immanuel « </p>
+
+        <a title="Kontakt-Email" href="mailto:contact@immanuelm.de">Kontakt</a>
+		<i class="fas fa-address-book feature"></i>
+        <b>•</b>
+        <a title="Quellenangaben" href="quellen.html" target="_blank">Quellen</a>
+		<i class="fas fa-sign feature"></i>
+        <b>•</b>
+        <a title="Sourcecode der Website" href="https://github.com/ximmanuel/hauskatze" target="_blank">Github</a>
+		<i class="fas fa-folder-open feature"></i>
+        <br>
+    </section>
+</body>
+<script src="stuff/scripts/main.js"></script>
+<script src="stuff/scripts/questions.js"></script>
+<script src="stuff/scripts/quiz.js"></script>
+</html>

@@ -1,8 +1,6 @@
-## German | Hauskatzen Webseite
+## Cat website
 
-Eine kleine Webseite, die ursprünglich für das
-Fach Informationstechnologie entwickelt wurde.
-Es ist mein erstes Web-Projekt...
+My first Web-Project which I programmed for the subject IT in school.
 
-Sie informiert über Hauskatzen. Dazu gibt es passend
-zu den Informationen, welche man auf der Webseite findet, ein Quiz.
+It provides information about cats.
+In addition there is a quiz to the information.

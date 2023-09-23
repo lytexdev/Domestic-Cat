@@ -6,4 +6,4 @@ In addition there is a quiz to the information.
 
 ⚠️ NOT 100% RESPONSIVE ⚠️
 
-Live Demo: https://ximmanuel.github.io/DomesticCat/
+Live Demo: https://ximmanuel.github.io/Domestic-Cat/
